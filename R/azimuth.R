@@ -50,6 +50,7 @@ RunAzimuth.Seurat <- function(
   } else {
     if (dir.exists(reference)) {
       reference <- LoadReference(reference)$map
+      reference[["SCT"]]=reference[["refAssay"]]
     } else {
       reference <- tolower(reference)
       if (reference %in% InstalledData()$Dataset) {

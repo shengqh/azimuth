@@ -127,7 +127,7 @@ RunAzimuth.Seurat <- function(
         object = query,
         pattern = '^MT-',
         col.name = 'percent.mt',
-        assay = assay
+        assay = "RNA"
       )
     }
     # Find anchors between query and reference
